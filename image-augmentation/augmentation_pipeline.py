@@ -15,6 +15,7 @@ class AugmentationPipeline:
         return transformed["image"]
 
 def visualize_augmentations(image_path, pipeline, num_versions=5):
+    
     image = cv2.imread(image_path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     plt.figure(figsize=(12,4))
